@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="container">
+    <form id="Registration" action="register.php" method="post">
+      <div class="formgroup">
+        <label for="first_name">First Name</label>
+        <input type="text" class="form-control" id="first_name" name="first_name">
+      </div>
+      <div class="formgroup">
+        <label for="last_name">Last Name</label>
+        <input type="text" class="form-control" id="last_name" name="last_name">
+      </div>
+      <div class="formgroup">
+        <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male">Male</label>
+        <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female">Female</label>
+        <label for="other" class="radio-inline"><input type="radio" name="gender" value="o" id="other">Other</label>
+      </div>
+      <div class="formgroup">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age" name="age">
+      </div>
+      <div class="formgroup">
+        <label for="adhaar_no">Adhaar no</label>
+        <input type="text" class="form-control" id="adhaar_no" maxlength="12" minlength="12" name="adhaar_no">
+      </div>
+      <div class="formgroup">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" name="city">
+      </div>
+      <div class="formgroup">
+        <label for="pin_code">Pin-Code</label>
+        <input type="text" class="form-control" id="pin_code" maxlength="6" minlength="6" name="pin_code">
+      </div>
+      <div class="formgroup">
+        <label for="contact_number">Contact number</label>
+        <input type="text" class="form-control" id="contact_number" maxlength="10" minlength="10" name="contact_number">
+      </div>
+      <div class="formgroup">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username">
+      </div>
+      <div class="formgroup">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" minlength="8" maxlength="20" name="password">
+      </div>
+      <div class="formgroup">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm_password" minlength="8" maxlength="20" name="password">
+      </div>
+      <div class="formgroup">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+  <footer>
+    <p>Contact details:</p>
+    <p>For any queries, contact <a href="tel:+919090909090">+91 9090909090</a></p>
+    <p>Email: <a href="mailto:vaccinationorg@gmail.com">vaccinationorg@gmail.com</a></p>
+  </footer>
+  <script src="register.js"></script>
+</body>
+</html>
